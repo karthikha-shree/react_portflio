@@ -424,6 +424,17 @@ footer {
 }
 
 /* ========= SCROLL ANIMATIONS ========= */
+/* App.css */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Default visible state (fallback for no JS) */
 .fade-in {

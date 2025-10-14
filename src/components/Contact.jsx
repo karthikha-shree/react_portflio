@@ -21,7 +21,7 @@ function Contact() {
         </div>
         <div className="contact-item">
           <span>💻</span>
-          <a href="https://github.com/karthikha-shree" target="_blank" rel="noreferrer">
+          <a  href={`${import.meta.env.BASE_URL}KARTHIKHA_SHREE_RESUME.pdf`} target="_blank" rel="noreferrer">
             GitHub: @karthikha-shree
           </a>
           </div>

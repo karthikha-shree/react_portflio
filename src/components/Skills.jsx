@@ -2,7 +2,7 @@ import React from "react";
 
 function Skills() {
   return (
-    <section id="skills">
+    <section id="skills" className="fade-in">
       <h2>Technical Skills</h2>
       <div className="skills-container">
         <div className="skill-category">

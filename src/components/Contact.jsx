@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <section id="contact">
+    <section id="contact" className="fade-in">
       <h2>Get In Touch</h2>
       <div className="contact-info">
         <div className="contact-item">

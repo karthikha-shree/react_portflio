@@ -40,7 +40,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects">
+    <section id="projects" className="fade-in">
       <h2>Featured Projects</h2>
       <div className="projects-grid">
         {projects.map((project, i) => (

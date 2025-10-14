@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <section id="about">
+    <section id="about" className="fade-in">
       <h2>About Me</h2>
       <p style={{ textAlign: "center", maxWidth: "800px", margin: "0 auto", fontSize: "1.1rem", color: "#666" }}>
         I'm a dedicated MERN Stack Developer with a strong foundation in full-stack web development and a passion for creating intuitive, user-friendly applications.

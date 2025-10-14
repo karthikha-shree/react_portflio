@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import useScrollAnimations from "../public/useScrollAnimations";
+import useScrollAnimation from "./hooks/useScrollAnimation";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -11,7 +11,7 @@ import Footer from "./components/Fotter";
 
 function App() {
   // Initialize scroll animations
-  useScrollAnimations();
+  useScrollAnimation();
 
   return (
     <>

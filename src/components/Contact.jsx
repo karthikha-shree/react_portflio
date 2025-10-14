@@ -1,12 +1,35 @@
 import React from "react";
 
 function Contact() {
+  const resumeFileName = "KARTHIKHA_SHREE _RESUME.pdf";
+  
+  const handleResumeView = (e) => {
+    e.preventDefault();
+    const resumeUrl = `${window.location.origin}/${resumeFileName}`;
+    console.log('Trying to view resume at:', resumeUrl);
+    window.open(resumeUrl, '_blank');
+  };
+
+  const handleResumeDownload = (e) => {
+    e.preventDefault();
+    const resumeUrl = `${window.location.origin}/${resumeFileName}`;
+    console.log('Trying to download resume from:', resumeUrl);
+    
+    // Create a temporary anchor element for download
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Karthikha_Shree_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="contact" className="fade-in">
       <h2>Get In Touch</h2>
       <div className="contact-info">
         <div className="contact-item">
-          <span>📧</span>
+          <span>📧 </span>
           <a href="mailto:karthilkha.2006@gmail.com">karthilkha.2006@gmail.com</a>
         </div>
         <div className="contact-item">
@@ -34,14 +57,16 @@ function Contact() {
           </a>
         </div>
         <div className="contact-item">
-          <span>🌐</span>
-          <a
-             href={`${import.meta.env.BASE_URL}KARTHIKHA_SHREE_RESUME.pdf`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            View my Résumé
-          </a>
+          <span>👁️</span>
+          <button onClick={handleResumeView}>
+            View Resume
+          </button>
+        </div>
+        <div className="contact-item">
+          <span>📥</span>
+          <button onClick={handleResumeDownload}>
+            Download Resume
+          </button>
         </div>
       </div>
     </section>

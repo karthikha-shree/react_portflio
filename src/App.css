@@ -388,6 +388,22 @@ section h2::after {
   color: var(--primary-light);
 }
 
+.contact-item button {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: ;
+  padding: 0;
+  transition: color 0.4s ease;
+}
+
+.contact-item button:hover {
+  color: var(--primary-light);
+}
+
 /* ========= FOOTER ========= */
 
 footer {

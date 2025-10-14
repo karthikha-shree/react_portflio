@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Fotter";
 
 function App() {
-  // Initialize scroll animations
+
   useScrollAnimation();
 
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import useScrollAnimation from "./hooks/useScrollAnimation";
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Navbar />
       <div className="container">
         <Hero />
         <About />

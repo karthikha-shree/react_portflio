@@ -36,7 +36,7 @@ function Contact() {
         <div className="contact-item">
           <span>🌐</span>
           <a
-            href="/KARTHIKHA_SHREE_RESUME.pdf"
+             href={`${import.meta.env.BASE_URL}KARTHIKHA_SHREE_RESUME.pdf`}
             target="_blank"
             rel="noreferrer"
           >

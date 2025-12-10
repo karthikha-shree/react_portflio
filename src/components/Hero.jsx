@@ -13,8 +13,7 @@ function Hero() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <div className="mb-6 inline-block">
-          <span className="text-sm font-semibold text-blue-600 dark:text-blue-400 tracking-widest uppercase bg-blue-100 dark:bg-blue-900/30 px-4 py-2 rounded-full">
-            Welcome to my portfolio
+          <span >
           </span>
         </div>
 
